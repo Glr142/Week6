@@ -13,7 +13,7 @@ namespace GProject
         {
             if (TestMode)
             {
-                return new FileContactDataService();
+                return new TestContactDataService();
             }
             else
             {
