@@ -1,9 +1,15 @@
-﻿namespace GProject
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace GProject
 {
-    public class ContactDataService : IContactDataService
+    public class FileContactDataService : IContactDataService
     {
         List<Person> _contacts;
-        public ContactDataService()
+        public FileContactDataService()
         {
             _contacts = new List<Person>
             {
@@ -18,6 +24,5 @@
         {
             return _contacts;
         }
-
     }
 }
